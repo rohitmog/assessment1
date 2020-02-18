@@ -1,0 +1,43 @@
+main {
+    background: url("../images/back-ground.jpeg");
+}
+
+h1 {
+    text-align: center;
+}
+
+#mystuff {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+img{
+    width: 120px; 
+    margin-bottom: 15px; 
+    /*Your code here*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ div{
+    padding: 30px; 
+    margin:5px; 
+    /* YOUR CODE HERE */
+    text-align: center;
+ }
+
+ @media all and (min-width: 800px){
+    #mystuff {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    div:nth-child(2n) {
+        border: 2px solid black;
+    }
+
+}
